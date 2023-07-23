@@ -16,7 +16,7 @@
   --main-color: #5bffff;
 }
 
-/* NavBar Style */
+/* ------ NavBar Style ------ */
 
 header{
     width: 100%;
@@ -80,7 +80,7 @@ header .navigation a:hover:before{
   }
 
 
-/* Video Slide Section */
+/* ------ Video Slide Section ------ */
 
 section{
     padding: 100px 200px;
@@ -213,7 +213,7 @@ section{
     transition-property: clip-path;
   }  
 
-/* About Section Style */
+/* ------ About Section Style ------ */
 
 .about{
   background: var(--second-bg-color);
