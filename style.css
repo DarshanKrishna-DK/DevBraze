@@ -28,6 +28,24 @@ section{
   padding: 100px 150px;
 }
 
+.btn{
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  letter-spacing: 2px;
+  background: transparent;
+  color: var(--text-color);
+  box-shadow: 0 0 .5rem white;
+  transition: 0.3s ease;
+}
+
+.btn:hover{
+  box-shadow: 0 0 .8rem var(--main-color);
+}
+
 /* ------ NavBar Style ------ */
 
 header{
@@ -304,7 +322,7 @@ header .navigation a:hover:before{
 }
 
 .projects-box p{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 1rem 0 2rem;
 }
 
@@ -326,39 +344,79 @@ header .navigation a:hover:before{
  transition: .3s ease; 
 }
 
-/* ------ Contribute Section ------ */
+/* ------ Hackathon Ideas Section ------ */
 
-.contribute{
+.hackathon{
   background: var(--second-bg-color);
 }
+
+/* ------ Contribute Section ------ */
 
 .contribute h2{
   font-size: 2.5rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-.contribute-subtext{
-  width: 90%;
-  text-align: center;
+.contribute-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contribute-content{
+  width: 48%;
+  height: 31rem;
+  z-index: 1;
   position: relative;
-  left: 60px;
-  margin-bottom: 1.5rem;
-}
-
-.container{
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
+}
+
+.contribute-content::before, .contribute-content::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contribute-content::before{
+  width: 100%;
+  height: 100%;
+  filter: blur(40px);
+  -webkit-clip-path: polygon(10% 0, 66% 0, 100% 0, 100% 8%, 100% 92%, 92% 100%, 7% 100%, 0 92%, 0 10%);
+  clip-path: polygon(10% 0, 66% 0, 100% 0, 100% 8%, 100% 92%, 92% 100%, 7% 100%, 0 92%, 0 10%);
+  background: rgb(45, 90, 222);
+  transition: all 1s ease-in-out;
+}
+
+.contribute-content::after {
+  width: 98.5%;
+  height: 98%;
+  box-shadow: inset 0px 0px 20px 20px #212121;
+  background: rgb(27, 27, 27);
+  -webkit-clip-path: polygon(26% -16%, 31% 5%, 61% 5%, 66% 0, 100% 0, 100% 8%, 100% 92%, 92% 100%, 7% 100%, 0 92%, 0 10%);
+  clip-path: polygon(26% -16%, 31% 5%, 61% 5%, 66% 0, 100% 0, 100% 8%, 100% 92%, 92% 100%, 7% 100%, 0 92%, 0 10%);
+}
+
+.contribute-content .contribute-text{
+  position: absolute;
+  z-index: 80;
+  width: 90%;
+  height: 26rem;
+  text-align: justify;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: .1rem solid hsl(221, 26%, 43%);
 }
 
 .input-container{
-  display: grid;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  padding-inline: 1rem;
-  padding: 30px 40px 65px 40px;
+  padding: 50px 40px 65px 40px;
 }
 
 .input-container::before{
@@ -370,9 +428,9 @@ header .navigation a:hover:before{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-clip-path: polygon(26% 0, 66% 0, 92% 0, 100% 8%, 100% 89%, 91% 100%, 7% 100%, 0 92%, 0 0);
-  clip-path: polygon(26% 0, 66% 0, 92% 0, 100% 8%, 100% 89%, 91% 100%, 7% 100%, 0 92%, 0 0);
-  background: blueviolet;
+  -webkit-clip-path: polygon(26% 0, 66% 0, 92% 0, 100% 8%, 100% 92%, 91% 100%, 7% 100%, 0 92%, 0 0);
+  clip-path: polygon(26% 0, 66% 0, 92% 0, 100% 8%, 100% 92%, 91% 100%, 7% 100%, 0 92%, 0 0);
+  background: rgb(45, 90, 222);
   transition: all 1s ease-in-out;
 }
 
@@ -387,44 +445,30 @@ header .navigation a:hover:before{
   box-shadow: inset 0px 0px 20px 20px #212121;
   background: rgb(27, 27, 27);
   /* background: repeating-linear-gradient(to bottom, transparent 0%, rgba(64, 144, 181, 0.6) 1px, rgb(0, 0, 0) 3px, hsl(295, 60%, 12%) 5px, #153544 4px, transparent 0.5%), repeating-linear-gradient(to left, hsl(295, 60%, 12%) 100%, hsla(295, 60%, 12%, 0.99) 100%); */
-  /* -webkit-clip-path: polygon(26% 0, 31% 5%, 61% 5%, 66% 0, 92% 0, 100% 8%, 100% 89%, 91% 100%, 7% 100%, 0 92%, 0 0); */
-  clip-path: polygon(26% 0, 31% 5%, 61% 5%, 66% 0, 92% 0, 100% 8%, 100% 89%, 91% 100%, 7% 100%, 0 92%, 0 0);
+  -webkit-clip-path: polygon(26% 0, 31% 5%, 61% 5%, 66% 0, 92% 0, 100% 8%, 100% 92%, 91% 100%, 7% 100%, 0 92%, 0 0);
+  clip-path: polygon(26% 0, 31% 5%, 61% 5%, 66% 0, 92% 0, 100% 8%, 100% 92%, 91% 100%, 7% 100%, 0 92%, 0 0);
   animation: backglitch 50ms linear infinite;
 }
 
-.input-box{
+.contribute .input-box, .in, .btn{
   z-index: 80;
-  width: 100%;
+  font-size: 0.9rem;
 }
 
 .input-container .in{
-  font-size: 0.9rem;
   background: transparent;
-  box-sizing: border-box;
-  padding-inline: 0.5rem;
-  padding-block: 0.7rem;
-  border: none;
-  margin: 5px 30px;
+  padding: .7rem;
+  margin: 5px 25px;
+  color: var(--text-color);
   transition: all 1s ease-in-out;
   border: 0.1rem solid hsl(221, 26%, 43%);
   border-radius: 10px;
+  resize: none;
 }
 
 .input-container .in:hover{
   transition: all 1s ease-in-out;
-  background: linear-gradient(90deg, transparent 0%, rgba(102, 224, 255, 0.2) 27%, rgba(102, 224, 255, 0.2) 63%, transparent 100%);
-}
-
-.input-container:focus-within::before{
-  transition: all 1s ease-in-out;
-  background: hsla(0, 0%, 100%, 0.814);
-}
-
-.input-container .in:focus{
-  outline: none;
-  border-bottom: 1px solid hsl(192, 100%, 100%);
-  color: hsl(192, 100%, 88%);
-  background: linear-gradient(90deg, transparent 0%, rgba(102, 224, 255, 0.2) 27%, rgba(102, 224, 255, 0.2) 63%, transparent 100%);
+  background: linear-gradient(transparent 0%, rgba(102, 224, 255, 0.2) 100%, rgba(102, 224, 255, 0.2) 100%, transparent 100%);
 }
 
 .in::-moz-placeholder {
@@ -435,24 +479,84 @@ header .navigation a:hover:before{
   color: var(--main-color);
 }
 
-.input-container textarea{
-  z-index: 80;
-  resize: none;
-}
-
 .input-container .btn{
-  z-index: 80;
-  font-size: 0.9rem;
-  font-weight: 500;
-  border-radius: 20px;
   position: absolute;
   top: 93%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px 20px;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  letter-spacing: 2px;
 }
 
+/* ------ Contact Section ------ */
+
+.contact{
+  background: var(--second-bg-color);
+}
+
+.contact h2{
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact h2 span{
+  color: var(--main-color);
+}
+
+.contact form{
+  max-width: 43rem;
+  margin: auto;
+  text-align: center;
+}
+
+.contact form .input-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact form .input-box input, .contact form textarea{
+  width: 97.6%;
+  padding: 1rem;
+  font-size: 1rem;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  margin: 0.5rem;
+  border: none;
+}
+
+.contact form textarea{
+  resize: none;
+}
+
+.contact form .btn{
+  margin-top: 1rem;
+}
+
+/* ------ Footer Section ------ */
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem 9%;
+}
+
+.footer-iconTop a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  background: var(--main-color);
+  border-radius: .6rem;
+  transition: .4s ease;
+}
+
+.footer-iconTop a i{
+  font-size: 1.5rem;
+  color: var(--second-bg-color);
+}
+
+.footer-iconTop a:hover{
+  box-shadow: 0 0 1rem var(--main-color);
+}
