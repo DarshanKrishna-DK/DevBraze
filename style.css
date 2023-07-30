@@ -710,8 +710,10 @@ input.slider-target {
   height: 98%;
   box-shadow: inset 0px 0px 20px 20px #212121;
   background: rgb(27, 27, 27);
-  -webkit-clip-path: polygon(26% -16%, 33% 5%, 64% 5%, 66% 0, 100% 0, 100% 8%, 100% 92%, 92% 100%, 7% 100%, 0 92%, 0 10%);
-  clip-path: polygon(26% -16%, 33% 5%, 64% 5%, 66% 0, 100% 0, 100% 8%, 100% 92%, 92% 100%, 7% 100%, 0 92%, 0 10%);
+  -webkit-clip-path: polygon(26% -16%, 100% 0, 100% 0, 0 0, 100% 0, 100% 8%, 100% 92%, 92% 100%, 7% 100%, 0 92%, 0 10%);
+  clip-path: polygon(26% -16%, 100% 0, 100% 0, 0 0, 100% 0, 100% 8%, 100% 92%, 92% 100%, 7% 100%, 0 92%, 0 10%);
+  /* -webkit-clip-path: polygon(26% -16%, 33% 5%, 64% 5%, 66% 0, 100% 0, 100% 8%, 100% 92%, 92% 100%, 7% 100%, 0 92%, 0 10%); */
+  /* clip-path: polygon(26% -16%, 33% 5%, 64% 5%, 66% 0, 100% 0, 100% 8%, 100% 92%, 92% 100%, 7% 100%, 0 92%, 0 10%); */
 }
 
 .contribute-content .contribute-text{
@@ -799,6 +801,15 @@ input.slider-target {
 
 .input-container input[type="radio"]{
   margin-right: 5px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
 }
 
 /* ------ Contact Section ------ */

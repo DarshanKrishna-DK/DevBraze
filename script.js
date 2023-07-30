@@ -26,6 +26,32 @@ btns.forEach((btn,i)=>{
     });
 });
 
+/*----------------Automatic Video Slider----------------*/
+
+const videoSlides = document.querySelectorAll('.video-slide');
+const navBtns = document.querySelectorAll('.nav-btn');
+const videoContent = document.querySelectorAll('.content');
+let currentSlide = 0;
+
+function showSlide(index) {
+    // Hide all slides and deactivate all nav buttons and content
+    videoSlides.forEach((slide) => slide.classList.remove('active'));
+    navBtns.forEach((btn) => btn.classList.remove('active'));
+    videoContent.forEach((content)=>content.classList.remove('active'));
+
+    // Show the current slide and activate the corresponding nav button and content
+    videoSlides[index].classList.add('active');
+    navBtns[index].classList.add('active');
+    videoContent[index].classList.add('active');
+}
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % videoSlides.length;
+    showSlide(currentSlide);
+  }
+setInterval(nextSlide, 8000);
+
+
 /*----------------Scroll Reveal----------------*/
 
 // ScrollReveal({

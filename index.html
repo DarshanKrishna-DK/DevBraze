@@ -241,7 +241,7 @@
         
         </div>
       </div>
-      <form action="" method="post">
+      <form id="contribute_form" action="https://script.google.com/macros/s/AKfycby9mtYwydzr95f8ZMNid_0z_04lWRFxQpRysTbi-dJUNo6V9hisLyzWF4my7_ZGzlYoHg/exec" method="post" onsubmit="return validateForm()">
         <div class="input-container">
           <div class="input-box">
             <input class="in" type="text" placeholder="Your Name"  name="name" required>
@@ -255,8 +255,8 @@
           <textarea class="in" name="projectdescription" rows="5" placeholder="Project Description" required></textarea>
           <div class="in">
             <label>Want your GitHub profile to be featured?</label>
-            <input class="in" type="radio" name="agree" checked><label>Yes</label>
-            <input class="in" type="radio" name="agree"><label>No</label>
+            <input class="in" type="radio" name="consent" checked><label>Yes</label>
+            <input class="in" type="radio" name="consent"><label>No</label>
           </div>
           <input type="submit" value="Submit" class="btn">
         </div>
@@ -266,8 +266,8 @@
 
   <!-------- Contact Us Section -------->
   <section class="contact" id="contact">
-    <h2>Contact <span>Us!</span></h2>
-    <form action="" method="post">
+    <h2>Contact <span>Us</span></h2>
+    <form action="https://script.google.com/macros/s/AKfycbxUs08FctED_JMRxiMYUT12KtA1gkbKbDJZmkLnIjHcp87zLXLagO7OEJiV1Mst6GS60w/exec" method="post" onsubmit="return validateForm()">
       <div class="input-box">
         <input type="text" placeholder="Full Name" name="fullname" required>
         <input type="email" placeholder="Email Address" id="email" name="email" required>
@@ -294,6 +294,7 @@
   <!-------- JavaScript File -------->
   <script src="script.js"></script>
   <!-------- Scroll Reveal -------->
+  
   <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 </html>
