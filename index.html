@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>DevBraze | Helping Students do wonderful projects</title>
 </head>
 <body>
@@ -241,11 +242,11 @@
         
         </div>
       </div>
-      <form id="contribute_form" action="https://script.google.com/macros/s/AKfycby9mtYwydzr95f8ZMNid_0z_04lWRFxQpRysTbi-dJUNo6V9hisLyzWF4my7_ZGzlYoHg/exec" method="post" onsubmit="return validateForm()">
+      <form id="contribute_form" action="https://script.google.com/macros/s/AKfycby9mtYwydzr95f8ZMNid_0z_04lWRFxQpRysTbi-dJUNo6V9hisLyzWF4my7_ZGzlYoHg/exec" method="post" onsubmit="return validateContributeForm()">
         <div class="input-container">
           <div class="input-box">
             <input class="in" type="text" placeholder="Your Name"  name="name" required>
-            <input class="in" type="number" placeholder="Mobile Number" name="mobilenumber">
+            <input class="in" type="number" placeholder="Mobile Number" id="mobileNum" name="mobilenumber">
           </div>
           <div class="input-box">
             <input class="in" type="text" placeholder="Project Name" name="projectname" required>
@@ -294,7 +295,7 @@
   <!-------- JavaScript File -------->
   <script src="script.js"></script>
   <!-------- Scroll Reveal -------->
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
   
-  <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 </html>
