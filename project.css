@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --bg-color: #050a13;
+  --second-bg-color: #0d1f2d;
+  --text-color: #fff;
+  --main-color: #00eeff;
+}
+
+body{
+  background: var(--second-bg-color);
+  color: var(--text-color);
+  padding: 5rem 10rem;
+}
+
+a{
+  color: var(--text-color);
+}
+
+/* ------ NavBar Style ------ */
+
+header{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+header .brand{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+header nav{
+  display: inline-flex;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  background: var(--bg-color);
+  border-radius: 2.5rem;
+  margin: 0 25rem;
+}
+
+header nav a{
+  padding: 1.5rem 2rem;
+}
+
+header nav a:hover, nav a.active{
+  color: var(--main-color);
+}
+
+/* ------ Pages Style ------ */
+
+
+

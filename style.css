@@ -14,7 +14,6 @@
   --bg-color: #050a13;
   --second-bg-color: #0d1f2d;
   --text-color: #fff;
-  /* --main-color: #5bffff;  */
   --main-color: #00eeff;
 }
 
@@ -39,6 +38,7 @@ section{
   color: var(--text-color);
   box-shadow: 0 0 .5rem white;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .btn:hover{
