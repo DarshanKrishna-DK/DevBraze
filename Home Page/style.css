@@ -45,7 +45,7 @@ section{
   box-shadow: 0 0 .8rem var(--main-color);
 }
 
-a:visited{
+a{
   color: var(--text-color);
 }
 
