@@ -36,6 +36,10 @@ header{
   align-items: center;
 }
 
+header .brand, nav{
+  z-index: 8;
+}
+
 header .brand{
   font-size: 3rem;
   font-weight: 600;
@@ -63,5 +67,63 @@ header nav a:hover, nav a.active{
 
 /* ------ Pages Style ------ */
 
+/* .project-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 7rem 0rem;
+  width: 100%;
+  background-image: url(/Images\ and\ videos/games.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+.projects-slider {
+  display: flex;
+  width: 300%; /* Adjust based on the number of project containers */
+  transition: transform 0.5s ease-in-out;
+}
+
+.project-container {
+  flex: 0 0 33.33%; /* Adjust based on the number of project containers */
+  height: 100vh;
+}
 
 
+
+.category-content{
+  text-align: center;
+}
+
+.category-content h2{
+  font-size: 4rem;
+  margin-top: 5rem;
+  text-transform: uppercase;
+  color: var(--main-color);
+  text-shadow: 1px 2px 8px var(--main-color);
+  animation: shadowAnimation 3s infinite;
+}
+
+@keyframes shadowAnimation {
+  0%, 100% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 1px 2px 8px var(--main-color);
+  }
+}
+
+.category-content p{
+  margin: 1.5rem auto 7rem;
+  font-size: 1.6rem;
+}
+
+.project-box{
+  width: 100%;
+  height: 30rem;
+  background: var(--bg-color);
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
