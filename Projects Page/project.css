@@ -21,7 +21,7 @@
 body{
   background: var(--second-bg-color);
   color: var(--text-color);
-  padding: 5rem 10rem;
+  overflow-x: hidden;
 }
 
 a{
@@ -34,6 +34,7 @@ header{
   margin: 0 auto;
   display: flex;
   align-items: center;
+  padding: 5rem 10rem;
 }
 
 header .brand, nav{
@@ -81,16 +82,14 @@ header nav a:hover, nav a.active{
 
 .projects-slider {
   display: flex;
-  width: 300%; /* Adjust based on the number of project containers */
+  width: 300%; 
   transition: transform 0.5s ease-in-out;
 }
 
 .project-container {
-  flex: 0 0 33.33%; /* Adjust based on the number of project containers */
+  flex: 0 0 33.33%;
   height: 100vh;
 }
-
-
 
 .category-content{
   text-align: center;
@@ -98,7 +97,6 @@ header nav a:hover, nav a.active{
 
 .category-content h2{
   font-size: 4rem;
-  margin-top: 5rem;
   text-transform: uppercase;
   color: var(--main-color);
   text-shadow: 1px 2px 8px var(--main-color);
@@ -119,11 +117,33 @@ header nav a:hover, nav a.active{
   font-size: 1.6rem;
 }
 
+.project-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .project-box{
-  width: 100%;
+  width: 90%;
   height: 30rem;
   background: var(--bg-color);
   border-radius: 20px;
-  text-align: center;
   margin-bottom: 2rem;
+  display: flex;
 }
+
+.project-img{
+  flex: 30%;
+}
+
+.project-img img{
+  width: 280px;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+}
+
+.project-detail{
+  flex: 70%;
+}
+

@@ -1,7 +1,7 @@
 /*----------------Scroll Section Active Link Updation----------------*/
 
-// let sections = document.querySelectorAll('section');
-// let navLinks = document.querySelectorAll('header nav a');
+// let sections = document.querySelectorAll('.project-container');
+// let navLink = document.querySelectorAll('header nav a');
 
 // window.onscroll = () =>{
 //     sections.forEach(sec =>{
@@ -11,7 +11,7 @@
 //         let id = sec.getAttribute('id');
 
 //         if(top >= offset && top < offset+height){
-//             navLinks.forEach(links => {
+//             navLink.forEach(links => {
 //                 links.classList.remove('active');
 //                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
 //             })
@@ -29,7 +29,7 @@ navLinks.forEach(link => {
         const target = document.getElementById(link.getAttribute('data-target'));
         const targetIndex = Array.from(target.parentElement.children).indexOf(target);
 
-        const translateXValue = -targetIndex * 33.33; // Adjust based on the number of project containers
+        const translateXValue = -targetIndex * 33.33;
         projectsSlider.style.transform = `translateX(${translateXValue}%)`;
     });
 });
