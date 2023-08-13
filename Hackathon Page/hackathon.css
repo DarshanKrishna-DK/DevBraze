@@ -48,15 +48,14 @@ header .brand{
 }
 
 header nav{
-  display: inline-flex;
-  width: 40%;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 2.5rem;
   font-weight: 600;
   background: var(--bg-color);
   border-radius: 2.5rem;
-  margin: 0 25rem;
+  margin: 0 18rem;
 }
 
 header nav a{
@@ -67,37 +66,25 @@ header nav a:hover, nav a.active{
   color: var(--main-color);
 }
 
-/* ------ Pages Style ------ */
+/* ------ Idea Page Style ------ */
 
-/* .project-container{
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 7rem 0rem;
-  width: 100%;
-  background-image: url(/Images\ and\ videos/games.avif);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
-
-.projects-slider {
+.domain-slider {
   display: flex;
   width: 300%; 
   margin-top: 17rem;
   transition: transform 0.5s ease-in-out;
 }
 
-.project-container {
+.domain-container {
   flex: 0 0 33.33%;
   height: 100vh;
 }
 
-.category-content{
+.domain-content{
   text-align: center;
 }
 
-.category-content h2{
+.domain-content h2{
   font-size: 4rem;
   text-transform: uppercase;
   color: var(--main-color);
@@ -114,19 +101,19 @@ header nav a:hover, nav a.active{
   }
 }
 
-.category-content p{
+.domain-content p{
   margin: 1.5rem auto 7rem;
   font-size: 1.6rem;
 }
 
-.project-list{
+.domain-idea-list{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.project-box{
+.idea-box{
   width: 90%;
   height: 30rem;
   background: var(--bg-color);
@@ -135,7 +122,7 @@ header nav a:hover, nav a.active{
   display: flex;
 }
 
-.project-img{
+/* .project-img{
   flex: 30%;
 }
 
@@ -147,5 +134,4 @@ header nav a:hover, nav a.active{
 
 .project-detail{
   flex: 70%;
-}
-
+} */
