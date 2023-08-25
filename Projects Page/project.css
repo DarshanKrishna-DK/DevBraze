@@ -139,6 +139,16 @@ header nav a:hover, nav a.active{
   flex: 70%;
 }
 
+.project-detail p{
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+.project-detail p span{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
 
 /* ------ Footer Section ------ */
 
