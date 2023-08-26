@@ -144,6 +144,7 @@ header nav a:hover, nav a.active{
   background: var(--bg-color);
   border-radius: 20px;
   margin-bottom: 2rem;
+  box-shadow: 0 0 8px var(--text-color);
 }
 
 .idea-box h2{

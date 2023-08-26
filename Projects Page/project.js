@@ -1,23 +1,12 @@
 /*----------------Scroll Section Active Link Updation----------------*/
 
-// let sections = document.querySelectorAll('.project-container');
-// let navLink = document.querySelectorAll('header nav a');
+$(document).ready(function(){
+    $('a').on('click', function(){
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    });
+});
 
-// window.onscroll = () =>{
-//     sections.forEach(sec =>{
-//         let top = window.scrollY;
-//         let offset = sec.offsetTop-150;
-//         let height = sec.offsetHeight;
-//         let id = sec.getAttribute('id');
-
-//         if(top >= offset && top < offset+height){
-//             navLink.forEach(links => {
-//                 links.classList.remove('active');
-//                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-//             })
-//         }
-//     })
-// }
 
 /*----------------Section Slide----------------*/
 const navLinks = document.querySelectorAll('nav a');
