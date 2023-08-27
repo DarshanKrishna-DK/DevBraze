@@ -19,7 +19,7 @@
 }
 
 body{
-  background-image: url(/Images\ and\ videos/web-dev.avif);
+  background-image: url(/Images\ and\ videos/projects-bg.jpg);
   background-position: center;
   background-size: cover;
   color: var(--text-color);
@@ -103,7 +103,7 @@ header nav a:hover, nav a.active{
   border-radius: 15px;
   background: var(--bg-color);
   transform: scale(1);
-  opacity: 0.5;
+  opacity: 0.6;
   z-index: -1;
 }
 
@@ -113,7 +113,6 @@ header nav a:hover, nav a.active{
   color: var(--main-color);
   text-shadow: 1px 2px 8px var(--main-color);
   animation: shadowAnimation 3s infinite;
-  z-index: 5;
 }
 
 @keyframes shadowAnimation {
@@ -148,10 +147,6 @@ header nav a:hover, nav a.active{
   box-shadow: 0 0 8px var(--text-color);
 }
 
-.project-img{
-  flex: 30%;
-}
-
 .project-img img{
   width: 280px;
   height: 100%;
@@ -160,17 +155,24 @@ header nav a:hover, nav a.active{
 
 .project-detail{
   flex: 70%;
+  padding: 2.5rem 4rem;
 }
 
 .project-detail p{
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: justify;
+  font-weight: 600;
+  margin: .5rem;
 }
 
-.project-detail p span{
-  font-size: 1.6rem;
-  font-weight: bold;
+.project-detail p span, .project-detail p a{
+  font-size: 1.65rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+/* .project-detail p a{
+  color: var(--main-color);
+} */
 
 
 /* ------ Slide Up Button ------ */
