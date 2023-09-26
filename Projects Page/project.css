@@ -103,7 +103,7 @@ header nav a:hover, nav a.active{
   border-radius: 15px;
   background: var(--bg-color);
   transform: scale(1);
-  opacity: 0.6;
+  opacity: .8;
   z-index: -1;
 }
 
@@ -170,10 +170,9 @@ header nav a:hover, nav a.active{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* .project-detail p a{
+.project-detail p a:hover{
   color: var(--main-color);
-} */
-
+}
 
 /* ------ Slide Up Button ------ */
 
@@ -198,3 +197,5 @@ header nav a:hover, nav a.active{
 .iconTop:hover{
   box-shadow: 0 0 1rem var(--main-color);
 }
+
+
